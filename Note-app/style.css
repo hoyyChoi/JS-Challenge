@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    /* background-color: #63D471;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #7bdaf3;
+    font-family: "Kolker+Brush",sans-serif;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+  
+}
+
+.add{
+    background-color: #9ec862;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.note{
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note .tools{
+    background-color: #9ec862;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.note .tools button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.note .main{
+    background-color: #eee;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    /* display: none; */
+}
+
+.note textarea{
+    outline: none;
+    border: none;
+    height: 400px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.note .hidden{
+    display: none;
+}

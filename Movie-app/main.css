@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Kolker+Brush",sans-serif;
+    margin:0;
+    background-color: #22254b;
+}
+
+header{
+    background-color: #373b69;
+    padding: 1.5rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.title{
+    color: #fff;
+    font-size:2rem ;
+    font-weight: 500;
+    font-style: inherit;
+}
+
+.search{
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 2px solid #22254b;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.search::placeholder{
+    color: #22254b;
+}
+
+.search:focus{
+    background-color: #22254b;
+    outline: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    background-color: #373b69;
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span{
+    background-color: #22254b;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:green;
+}
+
+.movie-info span.orange{
+    color:orange;
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    overflow: auto;
+    transform:translateY(101%) ;
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3{
+    margin-top: 0;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
