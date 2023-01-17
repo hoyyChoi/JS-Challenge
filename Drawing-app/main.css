@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Kolker+Brush",sans-serif;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+canvas{
+    border: 2px solid peru;
+}
+
+.toolbox{
+    background-color: peru;
+    border: 1px solid peru;
+    padding: 1rem;
+    width: 804px;
+    display: flex;
+}
+
+.toolbox > *{
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 50px;
+    height: 50px;
+}
+
+.toolbox >*:last-child{
+    margin-left: auto;
+}
