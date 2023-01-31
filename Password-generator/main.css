@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: tomato;
+    color: white;
+    font-family: "Kolker+Brush",sans-serif;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pw-container{
+    background-color: slategray;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0,0,0.5);
+    
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw{
+    background-color: tomato;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 2rem;
+    padding: 1rem;
+    /* overflow: auto; */
+}
+
+.pw button{
+    background-color: brown;
+    border: none;
+    color: white;
+    position: absolute;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    top: 0;
+    right: 0;
+    transform: translate(0%,20%);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0%,0%);
+
+}
+
+.pw-body{
+    padding: 1rem;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    color: #eee;
+}
+
+.generate{
+    background-color:brown ;
+    color: white;
+    border: none;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
