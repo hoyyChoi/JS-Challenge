@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+
+
+body{
+    /* background: linear-gradient(300deg,lightgray,lightgray); */
+    font-family: "Kolker+Brush",sans-serif;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(http://image.dongascience.com/Photo/2020/07/89925688474a2a5fefe67dc19f8659c9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input{
+    border: none;
+    background-color: #fff;
+    border-radius: 25px;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 1rem;
+    min-width: 300px;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+.weather{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.weather h2{
+    margin-bottom: 0;
+}
+
+.weather small{
+    font-size: 1rem;
+}
+
+.weather h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px ;
+    font-size: 2rem;
+    font-weight: 700;
+    color:azure;
+}
+
